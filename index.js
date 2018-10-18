@@ -1,13 +1,16 @@
 // Import a library
 import React from 'react';
-import {Text, AppRegistry} from 'react-native';
-import {name as appName} from './app.json';
+import { AppRegistry, View } from 'react-native';
+import { name as appName } from './app.json';
+import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component
 const App = () => (
-    <Text>
-        Some Text
-    </Text>
+    <View>
+        <Header headerText={'Albums'} />
+        <AlbumList />
+    </View>
 );
 
 // Render it to the device
